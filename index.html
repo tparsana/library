@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+</head>
+<body>
+    <header>
+        <h1>k.</h1>
+        <div id="search-container">
+            <button id="search-icon">&#128269;</button>
+            <input type="text" id="search" placeholder="Search books...">
+        </div>
+    </header>
+    <main>
+        <section id="book-form">
+            <h2>Add a New Book</h2>
+            <form>
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+                
+                <label for="author">Author:</label>
+                <input type="text" id="author" required>
+                
+                <label for="genres">Genre:</label>
+                <select id="genres" multiple>
+                    <option value="Romance">Romance</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Non-fiction">Non-fiction</option>
+                    <option value="Historical">Historical</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Short Story">Short Story</option>
+                    <option value="Self Help">Seld Help</option>
+                    <option value="Fantasy Fiction">Fantasy Fiction</option>
+                    <option value="Biography">Biography</option>
+                    <option value="True Crime">True Crime</option>
+                    <option value="Smut Hihi">Smut Hihi</option>
+                    <option value="To-Read">To-Read</option>
+                </select>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" required>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" required></textarea>
+                
+                <label for="review">Review/Notes:</label>
+                <textarea id="review" required></textarea>
+                
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+        <section id="book-list">
+            <h2>Book List:</h2>
+            <div id="filters">
+                <label for="filter-genre">Genre:</label>
+                <select id="filter-genre" multiple>
+                    <option value="">All</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Non-fiction">Non-fiction</option>
+                    <option value="Historical">Historical</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Short Story">Short Story</option>
+                    <option value="Self Help">Seld Help</option>
+                    <option value="Fantasy Fiction">Fantasy Fiction</option>
+                    <option value="Biography">Biography</option>
+                    <option value="True Crime">True Crime</option>
+                    <option value="Smut Hihi">Smut Hihi</option>
+                    <option value="To-Read">To-Read</option>
+                </select>
+                <label for="filter-author">Author:</label>
+                <select id="filter-author">
+                    <option value="">All</option>
+                </select>
+                <label for="filter-rating">Rating:</label>
+                <select id="filter-rating">
+                    <option value="">All</option>
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <ul></ul>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

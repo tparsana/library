@@ -1,0 +1,8 @@
+changes:
+
+Genre - add multiple genres by CSV, and search accordingly.
+Date - use the date created to show how many books read in a month / year.
+Pages - can add pages data to show the pages and words read in a given time.
+UI - landing dashboard, search icon, add option, 'this month summary'.
+Cover - add a JPG as cover for the books.
+Save - make it more reliable to save the file, probably make and new file and append/ write.
